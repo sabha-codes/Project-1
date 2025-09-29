@@ -1,0 +1,153 @@
+/*reset*/ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body*/
+body{
+    font-family: 'Poppins',sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/*header*/
+header{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+header h1{
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+header p{
+    font-size: 1.2rem;
+    color: #555;
+}
+
+
+/*sections*/
+section{
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section h2{
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+section p{
+    margin-bottom: 10px;
+}
+
+section ul{
+    list-style-type: none;
+}
+
+section li{
+    background-color: #ecf0f1;
+    margin: 8px 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/*Links*/
+a{
+    text-decoration: none;
+    color: #2980b9;
+}
+
+a:hover{
+    color: #e74c3c;
+}
+
+/*form*/
+form ul{
+    list-style: none;
+    padding: 0;
+}
+.group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.group label{
+    width: 120px;
+    font-weight: bold;
+
+}
+.group input,
+.group textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*Footer*/
+footer{
+    text-align: center;
+    margin-top: 40px;
+    color: #555;
+}
+
+
+
+/*Make website Responsive*/
+
+/* For tablets and smaller screens*/
+
+@media (max-width: 768px){
+    body{
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    section{
+        padding: 15px;
+    }
+    .group{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .group label{
+        width: 100%;
+        margin-bottom: 5px ;
+    }
+    .group input,
+    .group textarea {
+        width: 100%;
+    }
+}
+
+
+/* For Mobile Screens */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    section p,
+    section li {
+        font-size: 0.9rem;
+    }
+    footer{
+        font-size: 0.8rem;
+    }
+}
